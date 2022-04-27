@@ -10,28 +10,30 @@
 8. Retorne ao Git Bash, coloque o código: eval $(ssh-agent -s)
 9. Logo após, o código - ssh-add id_ed25519 – expor chave (privada), posteriormente, o sistema vai pedirá a senha anteriormente digitada ou criada.
 
-# Criar commit
+# Vincular um repositório virtual a uma pasta local
 
-1.   Vá no site do GitHub, pegue o endereço do SSH no repositório
-
+1.   Vá no site do GitHub, pegue o endereço do HTTPS/SSH no repositório
 2.   Digite, no Git Bash: git clone (espaço) e copie o endereço da etapa anterior 
-
 3.   Digite "Yes"
-4.   git init = iniciar um repositório
+4.   git init = iniciar um repositório 
+5.   git config --global user.email "fabriciosantos.dev@gmail.com"  - caso necessário
+6.   git config --global user.name “Moriiarty” - caso necessário
+7.   Após efetuar alterações de arquivos
+8.   git add * = adicionar todos os arquivos no repositório
+9.   git commit -m “**comentário**” = preparar o documento para upload - commitar
+10.   git push origin main
 
-5.   git config --global user.email "fabriciosantos.dev@gmail.com" 
+# Vincular o commit local a um repositório
 
-6.   git config --global user.name “Moriiarty”
-
-7.   git add * = adicionar todos os arquivos no repositório
-
-8.   git commit -m “commit inicial” = preparar o documento para upload - commitar
-
-9.   git remote add origin (espaço) e o link do repositório (site/HTTPS) =  vincular o repositório virtual (só precisa na primeira vez)
-
-10.   git push origin master = enviar para o repositório remoto 
-
-11.   git pull origin master = puxar o arquivo do repositório virtual, antes de enviar pela segunda vez
+1. Executar o Git Bash na pasta do commit desejado
+2. git init = iniciar um repositório 
+3. git config --global user.email "fabriciosantos.dev@gmail.com" - caso necessário
+4. git config --global user.name “Moriiarty” - caso necessário
+5. git remote add **origin** (espaço) e o link do novo repositório (site/HTTPS/SSH) =  vincular ao repositório virtual (executar essa atividade somente na primeira vez)
+6. git push origin master = enviar para o repositório remoto 
+7. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar 
+8. corrigir possível alterações
+9. git push origin mater
 
 #  Termos
 
@@ -39,9 +41,11 @@
 
 * mv nome do arquivo ./nome da pasta = mover arquivo para outra pasta
 
-* git config –global –unset user.email (apagar email)
+* git config --list = lista de todas as configurações no seu git
 
-* git config –global –unset user.name (apagar name)
+* git config –global –unset user.email = apagar email
+
+* git config –global –unset user.name = apagar name
 
 * pwd = mostrar todos os caminhos até chegar ao local do endereço atual
 
@@ -49,4 +53,3 @@
 
 * git status = pendência do repositório (máquina)
 
- 

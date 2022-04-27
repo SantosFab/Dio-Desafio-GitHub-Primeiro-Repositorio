@@ -27,7 +27,7 @@
 
 8.   git commit -m “commit inicial” = preparar o documento para upload - commitar
 
-9.   git remote add origin (espaço) e o link do repositório (site/HTTPS) =  vincular o repositório virtual (só precisa na primeira vez)
+9.   git remote add origin (espaço) e o link do repositório (site/HTTPS/SSH?) =  vincular o repositório virtual (só precisa na primeira vez)
 
 10.   git push origin master = enviar para o repositório remoto 
 

@@ -25,16 +25,16 @@
 
 # Vincular o commit local a um repositório
 
-1. Executar o Git Bash na pasta do commit desejado
+1. Executar o Git Bash na pasta do commit desejada
 2. git init = iniciar um repositório 
 3. git config --global user.email "fabriciosantos.dev@gmail.com" - caso necessário
 4. git config --global user.name “Moriiarty” - caso necessário
 5. git remote add **origin** (espaço) e o link do novo repositório (site/HTTPS/SSH) =  vincular ao repositório virtual (executar essa atividade somente na primeira vez)
 6. git push origin master = enviar para o repositório remoto 
-7. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar 
+7. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar - caso necessário
 8. corrigir possível alterações
-9. git push origin mater
-
+9. git add * = adicionar todos os arquivos no repositório
+10. git push origin master
 #  Termos
 
 * dir -a = visualizar pastas ocultas

@@ -1,46 +1,37 @@
 # criar chave ssh
 
 1. Gere um Git Bash no desktop
-
 2. Digite o código ssh-keygen -t ed25519 -C fabriciosantos.dev@gmail.com
-
 3. Elabore/coloque uma senha
-
 4. Acesse a pasta, pelo Git Bash, com o endereço c/users/fabri(**usuário do pc**)/ .ssh (.**ssh é uma pasta oculta**)
-
-5.   Digite dir, dentro da pasta ssh, para visualizar as chaves.
-
-6.   cat id_ed25519.pub – expor a chave (pública)
-
-7.   Copiar a chave, logo após, vá até o site e registre a chave no GitHub
-
-8.   Retorne ao Git Bash, coloque o código: eval $(ssh-agent -s)
-
-9.   Logo após, o código - ssh-add id_ed25519 – expor chave (privada), posteriormente, o sistema vai pedirá a senha anteriormente digitada ou criada.
-
-10. Vá no site do GitHub, pegue o endereço do SSH no repositório
-
-11. Digite, no Git Bash: git clone (espaço) e copie o endereço da etapa anterior 
-
-12. Digite Yes
+5. Digite dir, dentro da pasta ssh, para visualizar as chaves.
+6. cat id_ed25519.pub – expor a chave (pública)
+7. Copiar a chave, logo após, vá até o site e registre a chave no GitHub
+8. Retorne ao Git Bash, coloque o código: eval $(ssh-agent -s)
+9. Logo após, o código - ssh-add id_ed25519 – expor chave (privada), posteriormente, o sistema vai pedirá a senha anteriormente digitada ou criada.
 
 # Criar commit
 
-1.   git init = iniciar um repositório
+1.   Vá no site do GitHub, pegue o endereço do SSH no repositório
 
-2.   git config --global user.email "fabriciosantos.dev@gmail.com" 
+2.   Digite, no Git Bash: git clone (espaço) e copie o endereço da etapa anterior 
 
-3. git config --global user.name “Moriiarty”
+3.   Digite "Yes"
+4.   git init = iniciar um repositório
 
-4.   git add * = adicionar todos os arquivos no repositório
+5.   git config --global user.email "fabriciosantos.dev@gmail.com" 
 
-5. git commit -m “commit inicial” = preparar o documento para upload - commitar
+6.   git config --global user.name “Moriiarty”
 
-6. git remote add origin (espaço) e o link do repositório (site/HTTPS) =  vincular o repositório virtual (só precisa na primeira vez)
+7.   git add * = adicionar todos os arquivos no repositório
 
-7. git push origin master = enviar para o repositório remoto 
+8.   git commit -m “commit inicial” = preparar o documento para upload - commitar
 
-8. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar pela segunda vez
+9.   git remote add origin (espaço) e o link do repositório (site/HTTPS) =  vincular o repositório virtual (só precisa na primeira vez)
+
+10.   git push origin master = enviar para o repositório remoto 
+
+11.   git pull origin master = puxar o arquivo do repositório virtual, antes de enviar pela segunda vez
 
 #  Termos
 

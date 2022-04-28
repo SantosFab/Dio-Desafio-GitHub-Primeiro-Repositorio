@@ -19,7 +19,7 @@
 5.   git config --global user.email "fabriciosantos.dev@gmail.com"  - caso necessário
 6.   git config --global user.name “SantosFab” - caso necessário
 7.   Após efetuar alterações de arquivos
-8.   git add * = adicionar todos os arquivos no repositório
+8.   git add * = adicionar todos os arquivos no commit
 9.   git commit -m “**comentário**” = preparar o documento para upload - commitar
 10.   git push origin main
 

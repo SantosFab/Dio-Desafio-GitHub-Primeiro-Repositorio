@@ -17,7 +17,7 @@
 3.   Digite "Yes"
 4.   git init = iniciar um repositório 
 5.   git config --global user.email "fabriciosantos.dev@gmail.com"  - caso necessário
-6.   git config --global user.name “Moriiarty” - caso necessário
+6.   git config --global user.name “SantosFab” - caso necessário
 7.   Após efetuar alterações de arquivos
 8.   git add * = adicionar todos os arquivos no repositório
 9.   git commit -m “**comentário**” = preparar o documento para upload - commitar
@@ -28,7 +28,7 @@
 1. Executar o Git Bash na pasta do commit desejada
 2. git init = iniciar um repositório 
 3. git config --global user.email "fabriciosantos.dev@gmail.com" - caso necessário
-4. git config --global user.name “Moriiarty” - caso necessário
+4. git config --global user.name “SantosFab” - caso necessário
 5. git remote add **origin** (espaço) e o link do novo repositório (site/HTTPS/SSH) =  vincular ao repositório virtual (executar essa atividade somente na primeira vez)
 6. git push origin master = enviar para o repositório remoto 
 7. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar - caso necessário
@@ -43,9 +43,9 @@
 
 * git config --list = lista de todas as configurações no seu git
 
-* git config –global –unset user.email = apagar email
+* git config -–global –-unset user.email = apagar email
 
-* git config –global –unset user.name = apagar name
+* git config –-global –-unset user.name = apagar name
 
 * pwd = mostrar todos os caminhos até chegar ao local do endereço atual
 

@@ -33,7 +33,7 @@
 6. git push origin master = enviar para o repositório remoto 
 7. git pull origin master = puxar o arquivo do repositório virtual, antes de enviar - caso necessário
 8. corrigir possível alterações
-9. git add * = adicionar todos os arquivos no repositório
+9. git add * = adicionar todos os arquivos no commit
 10. git push origin master
 #  Termos
 

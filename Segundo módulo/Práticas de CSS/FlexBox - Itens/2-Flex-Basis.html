@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 600px;
+            border: 3px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            min-height: 20px;
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .bzero{
+            flex-basis: 0;
+        }
+        .b30px{
+            flex-basis: 30px;
+        }
+        .basis{
+            flex-basis: 200px;
+        }
+        .grow{
+            flex-grow: 0;
+        }
+        .grow1{
+            flex-grow: 1;
+        }
+        .grow2{
+            flex-grow: 2;
+        }
+        .grow3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Base auto</h2>
+    <p>Basis Auto - Grow iguais</p>
+    <div class="container ">
+        <div class="item bauto grow2">A</div>
+        <div class="item bauto grow2">BBBB</div>
+        <div class="item bauto grow2">CC</div>
+        <div class="item bauto grow2">DDDD</div>
+        <div class="item bauto grow2">FF</div>
+    </div>
+    <p>Basis Auto - Grow último diferente</p>
+    <div class="container ">
+        <div class="item bauto grow1">A</div>
+        <div class="item bauto grow1">BBBB</div>
+        <div class="item bauto grow1">CC</div>
+        <div class="item bauto grow1">DDDD</div>
+        <div class="item bauto grow2">FF</div>
+    </div>
+    <p>Basis Auto - Grow zero </p>
+    <div class="container ">
+        <div class="item bauto grow">A</div>
+        <div class="item bauto grow">BBBB</div>
+        <div class="item bauto grow">CC</div>
+        <div class="item bauto grow">DDDD</div>
+        <div class="item bauto grow">FF</div>
+    </div>
+    <h2>Basis zero</h2>
+    <p>Basis Zero - Grow iguais</p>
+    <div class="container ">
+        <div class="item bzero grow1">A</div>
+        <div class="item bzero grow1">BBBB</div>
+        <div class="item bzero grow1">CC</div>
+        <div class="item bzero grow1">DDDD</div>
+        <div class="item bzero grow1">FF</div>
+    </div>
+    <p>Basis Zero - Grow último diferente</p>
+    <div class="container ">
+        <div class="item bzero grow1">A</div>
+        <div class="item bzero grow1">BBBB</div>
+        <div class="item bzero grow1">CC</div>
+        <div class="item bzero grow1">DDDD</div>
+        <div class="item bzero grow2">FF</div>
+    </div>
+    <p>Basis Zero - Grow zero </p>
+    <div class="container ">
+        <div class="item bzero grow">A</div>
+        <div class="item bzero grow">BBBB</div>
+        <div class="item bzero grow">CC</div>
+        <div class="item bzero grow">DDDD</div>
+        <div class="item bzero grow">FF</div>
+    </div>
+    <h2>basis 30px</h2>
+    <p>Basis 30px - Limite máximo do conteúdo - Todos os basis serão redistribuidos</p>
+    <div class="container ">
+        <div class="item b30px grow3">A</div>
+        <div class="item b30px grow3">BBBBBBBBBBBBBBBBBBBB</div>
+        <div class="item b30px grow1">CC</div>
+        <div class="item b30px grow1">DDDD</div>
+        <div class="item b30px grow2">FF</div>
+    </div>    
+    <p>Basis 30px - Grow iguais</p>
+    <div class="container ">
+        <div class="item b30px grow2">A</div>
+        <div class="item b30px grow2">BBBB</div>
+        <div class="item b30px grow2">CC</div>
+        <div class="item b30px grow2">DDDD</div>
+        <div class="item b30px grow2">FF</div>
+    </div>
+    <p>Basis 30px - Grow último diferente</p>
+    <div class="container ">
+        <div class="item b30px grow1">A</div>
+        <div class="item b30px grow1">BBBB</div>
+        <div class="item b30px grow1">CC</div>
+        <div class="item b30px grow1">DDDD</div>
+        <div class="item b30px grow2">FF</div>
+    </div>
+    <p>Basis 30px - Grow zero</p>
+    <div class="container ">
+        <div class="item b30px grow">A</div>
+        <div class="item b30px grow">BBBB</div>
+        <div class="item b30px grow">CC</div>
+        <div class="item b30px grow">DDDD</div>
+        <div class="item b30px grow">FF</div>
+    </div>
+ </body>
+</html>

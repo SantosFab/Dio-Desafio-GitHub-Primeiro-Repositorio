@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 3px solid black;
+        }
+        .container2 {
+            display: flex;
+            border: 3px solid black;
+            justify-content: space-around;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .item {
+            margin: 5px;
+            background-color: blueviolet;
+            font-size: 14px;
+            text-align: center;
+        }
+        .flex{
+            flex: 0;
+        }
+        .flex1{
+            flex: 1;
+        }
+        .flex2{
+            flex: 2;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex zero</h2>
+    <div class="container flex">
+        <div class="item flex0">1</div>
+        <div class="item flex0">2</div>
+        <div class="item flex0">3</div>
+        <div class="item flex0">4</div>
+        <div class="item flex0">5</div>
+    </div>
+    <h2>Flex 1        
+    </h2>
+    <div class="container">
+        <div class="item flex1">1</div>
+        <div class="item flex1">2</div>
+        <div class="item flex1">3</div>
+        <div class="item flex1">4</div>
+        <div class="item flex1">5</div>
+    </div>
+    <h2>Mix - Flex</h2>
+    <div class="container">
+        <div class="item flex1">1</div>
+        <div class="item flex2">2</div>
+        <div class="item flex1">3</div>
+        <div class="item flex2">4</div>
+        <div class="item flex2">5</div>
+    </div>
+    <h2>Flex zero - column</h2>
+    <div class="container2">
+    <div class="container column">
+        <div class="item flex1">1</div>
+        <div class="item flex1">2</div>
+        <div class="item flex1">33333333333333333</div>
+        <div class="item flex1">4</div>
+        <div class="item flex1">5</div>
+    </div>
+           
+    </h2>
+    <div class="container column">
+        <div class="item flex1">1111111111111111111</div>
+        <div class="item flex1">21222222222222</div>
+        <div class="item flex1">3</div>
+        <div class="item flex1">4</div>
+        <div class="item flex1">5</div>
+    </div>
+    
+    <div class="container column">
+        <div class="item flex1">1</div>
+        <div class="item flex1">2333333333333</div>
+        <div class="item flex1">3</div>
+        <div class="item flex1">4</div>
+        <div class="item flex1">5</div>
+    </div>
+</div>
+</body>
+
+</html>

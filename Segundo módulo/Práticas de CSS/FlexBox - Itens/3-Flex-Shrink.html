@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+        .item{
+            margin: 5px;
+            background-color: blueviolet;
+            font-size: 24px;
+            text-align: center;
+        }
+        .shrink{
+            flex-shrink: 0;
+        }
+        .shrink1{
+            flex-shrink: 1;
+        }
+        .shrink2{
+            flex-shrink: 2;
+        }
+        .grow{
+            flex-grow: 0;
+        }
+        .grow1{
+            flex-grow: 1;
+        }
+        .grow2{
+            flex-grow: 2;
+        }
+        .grow3{
+            flex-grow: 3;
+        }
+        .basis{
+            flex-basis: 100px;
+        }
+        .basisa{
+            flex-basis: auto;
+        }
+    </style>
+</head>
+<body>
+    <p> - shrink  - grow1</p>
+    <div class="container">
+        <div class="item shrink grow1">AAAA</div>
+        <div class="item shrink grow1">BB</div>
+        <div class="item shrink grow1">CCC</div>
+        <div class="item shrink grow1">DD</div>
+        <div class="item shrink grow1">E</div>
+      </div>
+      <p> shrink  - grow1- mais item </p>
+    <div class="container">
+        <div class="item shrink grow1">AAAA</div>
+        <div class="item shrink grow1">BB</div>
+        <div class="item shrink grow1">CCC</div>
+        <div class="item shrink grow1">CCC</div>
+        <div class="item shrink grow1">CCC</div>
+        <div class="item shrink grow1">DD</div>
+        <div class="item shrink grow1">E</div>
+      </div>
+      <p>Mesma situação da primeira - porém conteúdo maior do item do meio (perceba que borda do maior conteúdo é maior, quebrando a propriedade do grow)</p>
+    <div class="container">
+        <div class="item shrink1 grow1">A</div>
+        <div class="item shrink1 grow1">B</div>
+        <div class="item shrink1 grow1">CCC CCC CCCC CCC CCC CCC CCC CCC CCCC CCCC</div>
+        <div class="item shrink1 grow1">D</div>
+        <div class="item shrink1 grow1">E</div>
+    </div>
+      <p>Basis 100px - skrink 0 - grow1</p>
+    <div class="container">
+        <div class="item shrink basis grow1">AA</div>
+        <div class="item shrink basis grow1">BB</div>
+        <div class="item shrink basis grow1">CC</div>
+        <div class="item shrink basis grow1">DD</div>
+        <div class="item shrink basis grow1">E</div>
+    </div>
+    <p>Mix VARIAS - ITEM C ÚNICO SEM BASIS</p>
+    <div class="container">
+        <div class="item basis shrink0 grow3">A</div>
+        <div class="item basis shrink3 grow1">BB</div>
+        <div class="item basis shrink1 grow3">EE</div>
+        <div class="item shrink1 grow3">CC</div>
+        <div class="item basis shrink3 grow3">DD</div>
+        <div class="item basis shrink3 grow3">BB</div>
+    </div>
+    <p>Mix - O item não será reduzido</p>
+    <div class="container">
+        <div class="item shrink0 grow3">A</div>
+        <div class="item shrink3 grow1">BB</div>
+        <div class="item shrink1 grow3">EE</div>
+        <div class="item shrink1 grow3">CCC</div>
+        <div class="item shrink3 grow3">DDD</div>
+        <div class="item shrink0 grow1">bbB</div>
+    </div>
+</body>
+</html>

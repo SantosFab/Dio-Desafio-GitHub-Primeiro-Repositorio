@@ -1,0 +1,116 @@
+/* Projeto pouco responsivo e com muitos erros, preciso estudar mais sobre o css e entender o funcionando de cada comando */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+} 
+
+body{
+    background-color: rgb(240, 239, 239);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 70%;
+    min-height: 10vh;
+    background-color: rgb(240, 239, 239);
+    margin: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;              
+}
+
+footer a{
+    display: flex;
+    margin: 5px;    
+    max-height: 100%;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #8e8e8e;
+
+}
+
+.container-externo{    
+    display: flex;
+    width: 60%;
+    height: 85vh;
+    align-items: center;
+    margin: auto;
+    flex: 1;      
+}
+
+.imgcelular{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 650px;
+    height: 650px;
+
+      
+}
+.dados-usuario{
+    display: flex;
+    width: 60%;
+    min-height: 300px;
+    min-width: 280px;
+    background-color: white;
+    border: 1px solid lightgray;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.dados-usuario div{
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-ound;
+}
+
+.img-logo img{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-perfil img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 65%;    
+}
+
+.cx{
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    margin-top: 0px;    
+}
+
+.blue-text{
+    color: #0095f6;   
+}
+.autor{
+    font-weight: bold;    
+}
+
+

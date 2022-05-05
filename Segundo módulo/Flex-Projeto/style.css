@@ -65,6 +65,9 @@ header {
     font-size: 48px;
     margin-bottom: 10px;
 }
+.apresentacao img{
+    width: 80%;
+}
 
 .btn{
     background-color: #122A57;

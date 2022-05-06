@@ -1,116 +1,125 @@
-/* Projeto pouco responsivo e com muitos erros, preciso estudar mais sobre o css e entender o funcionando de cada comando */
-*{ 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 14px;
-} 
+    color: inherit;
+}
 
-body{
-    background-color: rgb(240, 239, 239);
-    width: 100%;
-    min-height: 100vh;
+body {
+    background-color: #fafafa;
+    max-width: 100%;
+    max-height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+footer {
+    background-color: #fafafa;
+    width: 50%;
+    max-height: vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8e8e8e;   
+}
+
+#container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;    
+}
+
+#container-externo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+    width: 50%;
     margin: 0;
-    padding: 0;
+}
+
+#container-externo .imgcelular {
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-footer{
-    width: 70%;
-    min-height: 10vh;
-    background-color: rgb(240, 239, 239);
-    margin: auto;
-    padding-left: 150px;
-    padding-right: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;              
+    width: 570px;
 }
 
-footer a{
+#dados-usuario{
     display: flex;
-    margin: 5px;    
-    max-height: 100%;
-    flex-wrap: wrap;
-    font-size: 12px;
-    color: #8e8e8e;
-
-}
-
-.container-externo{    
-    display: flex;
-    width: 60%;
-    height: 85vh;
-    align-items: center;
-    margin: auto;
-    flex: 1;      
-}
-
-.imgcelular{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    width: 650px;
-    height: 650px;
-
-      
-}
-.dados-usuario{
-    display: flex;
-    width: 60%;
-    min-height: 300px;
-    min-width: 280px;
-    background-color: white;
-    border: 1px solid lightgray;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    margin: auto;
-}
-
-.dados-usuario div{
-    padding: 0;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: space-ound;
-}
-
-.img-logo img{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid lightgray ;
+    background-color: #ffffff;
+    height: 330px;
+    width: 340px;       
 }
 
 .img-perfil img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
+    height: 110px;
+    width: 110px;
     overflow: hidden;
-    width: 65%;    
 }
 
-.cx{
+.operacao-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+#login{
     background-color: #0095f6;
-    border-radius: 4px;
-    color: white;
-    padding: 8px;
-    margin-top: 0px;    
+    color: white ;
+    border-radius: 5px;
+    padding: 8px 8px;
+    margin-bottom: 7px;
+}
+
+p #column{
+    flex-direction: column;
+    background-color: #0095f6;
+    border: 3px solid black;
 }
 
 .blue-text{
-    color: #0095f6;   
+    color: #0095f6;
 }
+
+#rodape{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;    
+    flex-direction: column;
+}
+#rodape .subitem{    
+    align-items: center;
+    justify-content: center;    
+    margin-bottom: 7px;
+    color: #8e8e8e; 
+      
+}
+
+#rodape .subitem a{
+    margin: 0px 4px;
+}
+
 .autor{
-    font-weight: bold;    
+    font-weight: bolder;
+    color: black;    
 }
-
-

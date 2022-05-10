@@ -1,4 +1,5 @@
-	background: #ffa;
+body {
+    background: #ffa;
 	font-family: verdana;
 	margin: auto;
 	max-width: 900px;

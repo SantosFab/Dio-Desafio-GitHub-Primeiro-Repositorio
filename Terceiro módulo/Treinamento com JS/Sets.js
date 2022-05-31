@@ -1,6 +1,6 @@
 function criSet(array) {        
     const set = new Set(array);
-    return [...set];
+    return [...set] // rever o que a reticência faz;
     
 }
 var array = [30, 30, 40, 5, 223, 2049, 3034, 5, 5];

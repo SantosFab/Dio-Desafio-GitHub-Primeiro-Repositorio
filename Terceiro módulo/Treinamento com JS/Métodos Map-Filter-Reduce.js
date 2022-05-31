@@ -3,13 +3,12 @@
     return fab.map((number => number *2))
 }
 let fab = [2, 3, 4, 5, 6, 7];
-console.log(fab)
-console.log(semThis(fab))  */
+console.log(fab)*/
 
-/* Map - Com o método this */
-/* function metodoThis(array, obj) {
-    return array.map(function(array){ 
-       return array * this.age}, obj);
+/* Map - Com o método this (treino) */
+function metodoThis(array) {
+    return array.map((array) => { 
+       return array * this.age});
 }
 const user1 = {
     firstName: "Fabrício",
@@ -17,17 +16,8 @@ const user1 = {
     age: 25,
     sex: "masculino",
 };
-const array = [1, 2]
-console.log(metodoThis(array, user1)) */
-
-/* Duvidas do exercício: porque a função não foi chamada com .call?
-Porque quando tentei chamar com .call o resultado aparece NaN, o this é global?
-Exemplo:
-function metodoThis(array) {
-    return array.map(function(number){ 
-       return number * this.age});
-}
-console.log(metodoThis.call(user1, array))*/
+const array = [1, 2];
+console.log(metodoThis.call(user1, array))
 
 /* Método Filter */
 /* function filter(array) {
@@ -54,7 +44,7 @@ console.log(reduce(array)); */
 let array = [30, 30, 40, 5, 5, 5];
 console.log(reduce(array)); */
 
-const lista = [
+/* const lista = [
     {
         produto: "manteiga",
         valor: 5,
@@ -77,4 +67,4 @@ const lista = [
 function troco(array) {
     return array.reduce((prev, current) => prev - current.valor, 50);
 }
-console.log(troco(lista));
+console.log(troco(lista)); */

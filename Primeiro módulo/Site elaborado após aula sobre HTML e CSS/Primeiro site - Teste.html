@@ -14,67 +14,67 @@
             <section>
                 <h2 class="subtitle"> Criar chave - SSH</h2>
                 <ol>
-                    <li>Gere um Git Bash no desktop
+                    <li>Gere um Git Bash no desktop</li>
                     <li>Digite o código ssh-keygen -t ed25519 -C "<a href="mailto:fabriciosantos.dev@gmail.com"
-                            target="_blank" title="E-mail do autor">fabriciosantos.dev@gmail.com</a>"
-                    <li>Elabore/coloque uma senha
+                            target="_blank" title="E-mail do autor">fabriciosantos.dev@gmail.com</a>"</li>
+                    <li>Elabore/coloque uma senha</li>
                     <li>Acesse a pasta, pelo Git Bash, com o endereço c/users/fabri(usuário do pc)/ .ssh (.**ssh é uma
-                        pasta oculta**)
-                    <li>Digite dir, dentro da pasta ssh, para visualizar as chaves.
-                    <li>cat id_ed25519.pub – expor a chave (pública)
-                    <li>Copiar a chave, logo após, vá até o site e registre a chave no GitHub
-                    <li>Retorne ao Git Bash, coloque o código: eval $(ssh-agent -s)
+                        pasta oculta**)</li>
+                    <li>Digite dir, dentro da pasta ssh, para visualizar as chaves.</li>
+                    <li>cat id_ed25519.pub – expor a chave (pública)</li>
+                    <li>Copiar a chave, logo após, vá até o site e registre a chave no GitHub</li>
+                    <li>Retorne ao Git Bash, coloque o código: eval $(ssh-agent -s)</li>
                     <li>Logo após, o código - ssh-add id_ed25519 – expor chave (privada), posteriormente, o sistema
-                        pedirá a senha anteriormente digitada ou criada.
+                        pedirá a senha anteriormente digitada ou criada.</li>
                 </ol>
             </section>
             <section>
+                
                 <h2 class="subtitle">Vincular o commit local a um repositório</h2>
                 <ol>
-                    <li>Executar o Git Bash na pasta do commit desejada
-                    <li>git init = iniciar um repositório
+                    <li>Executar o Git Bash na pasta do commit desejada</li>
+                    <li>git init = iniciar um repositório</li>
                     <li>git config --global user.email "<a href="mailto:fabriciosantos.dev@gmail.com" target="_blank"
-                            title="E-mail do autor">fabriciosantos.dev@gmail.com</a>" - caso necessário
+                            title="E-mail do autor">fabriciosantos.dev@gmail.com</a>" - caso necessário</li>
                     <li>git config --global user.name “<a href="https://github.com/SantosFab" target="_blank"
-                            title="GitHub do autor">SantosFab</a>" - caso necessário
-                    <li>git remote add **origin** (espaço) e o link do novo repositório (site/HTTPS/SSH) = vincular ao
-                        repositório virtual (executar essa atividade somente na primeira vez)
-                    <li>git push origin master = enviar para o repositório remoto
-                    <li>git pull origin master = puxar o arquivo do repositório virtual, antes de enviar - caso
-                        necessário
-                    <li>corrigir possível alterações
-                    <li>git add * = adicionar todos os arquivos no commit
-                    <li>git push origin master
+                            title="GitHub do autor">SantosFab</a>" - caso necessário</li>
+                    <li>git remote add origin https://github.com/SantosFab/teste.git = vincular ao
+                        repositório virtual (executar essa atividade somente na primeira vez)</li>
+                    <li>git branch -M main</li>
+                    <li>git push -u origin main</li>
+                    <li>corrigir possível alterações</li>
+                    <li>git add * = adicionar todos os arquivos no commit</li>
+                    <li>git push -u origin main</li>
                 </ol>
             </section>
             <section>
                 <h2 class="subtitle">Vincular um repositório virtual a uma pasta local</h2>
                 <ol>
-                    <li>Vá no site do GitHub, pegue o endereço do HTTPS/SSH no repositório
-                    <li>Digite, no Git Bash: git clone (espaço) e copie o endereço da etapa anterior
-                    <li>Digite "Yes"
-                    <li>git init = iniciar um repositório
+                    <li>Vá no site do GitHub, pegue o endereço do HTTPS/SSH no repositório</li>
+                    <li>Digite, no Git Bash: git clone (espaço) e copie o endereço da etapa anterior</li>
+                    <li>Digite "Yes"</li>
+                    <li>git init = iniciar um repositório</li>
                     <li>git config --global user.email "<a href="mailto:fabriciosantos.dev@gmail.com" target="_blank"
-                            title="E-mail do autor">fabriciosantos.dev@gmail.com</a>" - caso necessário
+                            title="E-mail do autor">fabriciosantos.dev@gmail.com</a>" - caso necessário</li>
                     <li>git config --global user.name “<a href="https://github.com/SantosFab" target="_blank"
-                            title="GitHub do autor">SantosFab</a>" - caso necessário
-                    <li>Após efetuar alterações de arquivos
-                    <li>git add * = adicionar todos os arquivos no commit
-                    <li>git commit -m “**comentário**” = preparar o documento para upload - commitar
-                    <li>git push origin main
+                            title="GitHub do autor">SantosFab</a>" - caso necessário</li>
+                    <li>Após efetuar alterações de arquivos</li>
+                    <li>git add * = adicionar todos os arquivos no commit</li>
+                    <li>git commit -m “comentário” = preparar o documento para upload - commitar</li>
+                    <li>git push origin main</li>
                 </ol>
             </section>
             <section>
                 <h2 class="subtitle">Termos</h2>
                 <ul>
-                    <li>dir -a = visualizar pastas ocultas
-                    <li>mv nome do arquivo ./nome da pasta = mover arquivo para outra pasta
-                    <li>git config --list = lista de todas as configurações no seu git
-                    <li>git config -–global –-unset user.email = apagar email
-                    <li>git config –-global –-unset user.name = apagar name
-                    <li>pwd = mostrar todos os caminhos até chegar ao local do endereço atual
-                    <li>git remote -v = lista de repositório remoto que você tem cadastrado
-                    <li>git status = pendência do repositório (máquina)
+                    <li>dir -a = visualizar pastas ocultas</li>
+                    <li>mv nome do arquivo ./nome da pasta = mover arquivo para outra pasta</li>
+                    <li>git config --list = lista de todas as configurações no seu git</li>
+                    <li>git config -–global –-unset user.email = apagar email</li>
+                    <li>git config –-global –-unset user.name = apagar name</li>
+                    <li>pwd = mostrar todos os caminhos até chegar ao local do endereço atual</li>
+                    <li>git remote -v = lista de repositório remoto que você tem cadastrado</li>
+                    <li>git status = pendência do repositório (máquina)</li>
                 </ul>
             </section>
         </article>
